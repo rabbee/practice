@@ -6,11 +6,13 @@ import (
 )
 
 func main() {
-	l1 := &medium.ListNode{2, &medium.ListNode{4, nil}}
-	l2 := &medium.ListNode{5, &medium.ListNode{6, nil}}
-	res := medium.AddTwoNumbers(l1, l2)
-	for res != nil {
-		fmt.Print(res.Val)
-		res = res.Next
-	}
+	var res int
+	res = medium.LengthOfLongestSubstring("abcabcbb")
+	fmt.Println(res)
+	res = medium.LengthOfLongestSubstring("bbbbb")
+	fmt.Println(res)
+	res = medium.LengthOfLongestSubstring("pwwkew")
+	fmt.Println(res)
+	res = medium.LengthOfLongestSubstring("尼玛")
+	fmt.Println(res)
 }
