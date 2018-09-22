@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"leetcode/medium"
+
+	"github.com/rabbee/leetcode/medium"
 )
 
 func main() {
