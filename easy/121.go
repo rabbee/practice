@@ -31,7 +31,7 @@ func maxProfit(prices []int) int {
 	lastMinPrice := MAX
 	lastMaxDiff := 0
 	for _, price := range prices {
-		lastMaxDiff = MaxInt(MaxInt(0, lastMaxDiff), price - lastMinPrice)
+		lastMaxDiff = MaxInt(lastMaxDiff, price - lastMinPrice)
 		lastMinPrice = MinInt(price, lastMinPrice)
 		//fmt.Printf("min: %d, diff: %d\n", lastMinPrice, lastMaxDiff)
 	}
