@@ -1,7 +1,6 @@
-package easy_test
+package easy
 
 import (
-	"github.com/rabbee/leetcode/easy"
 	"testing"
 )
 
@@ -28,12 +27,21 @@ func TestEasy1(t *testing.T) {
 		},
 	}
 	for _, item := range input {
-		slice := easy.TwoSum(item.Nums, item.Target)
+		slice := TwoSum(item.Nums, item.Target)
 		if len(slice) == 2 && slice[0] == item.Answer[0] && slice[1] == item.Answer[1] {
 			continue
 		}
 		t.Logf("[ERR] nums: %v, target: %d, answer: %v\t| your output: %v\n", item.Nums, item.Target, item.Answer, slice)
 		t.Fail()
 		break
+	}
+}
+
+func Test121_MaxProfit(t *testing.T) {
+	if maxProfit([]int{7, 1, 5, 3, 6, 4}) != 5 {
+		t.Fail()
+	}
+	if maxProfit([]int{7, 6, 4, 3, 1}) != 0 {
+		t.Fail()
 	}
 }
