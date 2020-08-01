@@ -46,3 +46,9 @@ func Test_buildTree(t *testing.T) {
 	inoOrder(tree)
 	fmt.Println()
 }
+
+func Test_myPow(t *testing.T) {
+	fmt.Println(myPow(2.00000, 10))
+	fmt.Println(myPow(2.10000, 3))
+	fmt.Println(myPow(2.00000, -2))
+}

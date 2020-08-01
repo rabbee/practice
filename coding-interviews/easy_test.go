@@ -69,3 +69,9 @@ func Test_multiMatrix(t *testing.T) {
 		})
 	}
 }
+
+func Test_hammingWeight(t *testing.T) {
+	fmt.Println(hammingWeight(11))
+	fmt.Println(hammingWeight(128))
+	fmt.Println(hammingWeight(4294967293))
+}

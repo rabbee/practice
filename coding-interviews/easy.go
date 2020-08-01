@@ -119,6 +119,7 @@ func fib(n int) int {
 	}
 	return powMatrix(n - 1)[0][0]
 }
+
 //end****************剑指 Offer 10- I. 斐波那契数列
 
 //剑指 Offer 11. 旋转数组的最小数字
@@ -135,4 +136,18 @@ func minArray(numbers []int) int {
 		}
 	}
 	return numbers[0]
+}
+
+//剑指 Offer 15. 二进制中1的个数
+//https://leetcode-cn.com/problems/er-jin-zhi-zhong-1de-ge-shu-lcof/
+func hammingWeight(num uint32) int {
+	var result = 0
+	var ptr uint32 = 1
+	for ptr > 0 {
+		if num&ptr > 0 {
+			result++
+		}
+		ptr <<= 1
+	}
+	return result
 }
