@@ -1,3 +1,3 @@
-module github.com/rabbee/leetcode
+module github.com/rabbee/practice
 
 go 1.13
