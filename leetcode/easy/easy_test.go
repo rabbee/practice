@@ -25,9 +25,14 @@ func TestEasy1(t *testing.T) {
 			Target: 4,
 			Answer: []int{0, 1},
 		},
+		{
+			Nums:   []int{3, 2, 4},
+			Target: 6,
+			Answer: []int{1, 2},
+		},
 	}
 	for _, item := range input {
-		slice := TwoSum(item.Nums, item.Target)
+		slice := TwoSumV3(item.Nums, item.Target)
 		if len(slice) == 2 && slice[0] == item.Answer[0] && slice[1] == item.Answer[1] {
 			continue
 		}
