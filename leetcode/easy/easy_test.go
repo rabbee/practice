@@ -1,6 +1,7 @@
 package easy
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -49,4 +50,19 @@ func Test121_MaxProfit(t *testing.T) {
 	if maxProfit([]int{7, 6, 4, 3, 1}) != 0 {
 		t.Fail()
 	}
+}
+
+func TestReverse(t *testing.T) {
+	fmt.Println(reverse(123))
+	fmt.Println(reverse(-123))
+	fmt.Println(reverse(MAX))
+	fmt.Println(reverse(MIN))
+}
+
+func TestLongestCommonPrefix(t *testing.T) {
+	fmt.Println(longestCommonPrefixV2([]string{"ab", "a"}))
+	fmt.Println(longestCommonPrefixV2([]string{"flow", "flower", "flight"}))
+	fmt.Println(longestCommonPrefixV2([]string{"", "", "flight"}))
+	fmt.Println(longestCommonPrefixV2([]string{"dog", "racecar", "car"}))
+	fmt.Println(longestCommonPrefixV2([]string{"reflower", "flow", "flight"}))
 }
